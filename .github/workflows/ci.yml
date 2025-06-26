@@ -39,7 +39,7 @@ jobs:
         run: |
           uv venv
           source .venv/bin/activate
-          uv sync --extra dev
+          uv sync
 
       - name: Run tests
         run: |
