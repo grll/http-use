@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 env:
-  PYTHON_VERSION: "3.10"
+  PYTHON_VERSION: "3.13"
 
 jobs:
   test:
@@ -39,7 +39,7 @@ jobs:
         run: |
           uv venv
           source .venv/bin/activate
-          uv sync --extra test
+          uv sync --extra dev
 
       - name: Run tests
         run: |
